@@ -4,6 +4,6 @@ module.exports = {
   },
   site: {
     port: process.env.PORT || 3001,
-    origin: `${process.env.ORIGIN}:${process.env.PORT || 3001}`,
+    origin: process.env.ORIGIN,
   },
 };
