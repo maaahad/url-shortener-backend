@@ -1,0 +1,5 @@
+node_modules
+coverage
+npm-debug.log
+access.log 
+.credentials.development.js

@@ -1,0 +1,16 @@
+config:
+  target: "http://localhost:3001/api"
+  phases:
+    - duration: 6
+      arrivalRate: 5
+      name: shorten stress test
+  payload:
+    path: "test-urls.csv"
+    fields:
+      - "originalUrl"
+scenarios:
+  - flow:
+      - post:
+          url: "/shorten"
+          json:
+            originalUrl: "{{ originalUrl }}"

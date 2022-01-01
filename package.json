@@ -1,0 +1,35 @@
+{
+  "name": "url-shortener-backend",
+  "version": "1.0.0",
+  "description": "This is the backend for url shortener web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint *.js lib",
+    "stress": "artillery run stress.yml",
+    "dev": "NODE_ENV=development nodemon cluster.js",
+    "start": "node cluster.js"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs",
+    "backend",
+    "mongoose",
+    "mongodb"
+  ],
+  "author": "Muhammed Abdullah Al Ahad",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "artillery": "^2.0.0-7",
+    "eslint": "^8.4.0",
+    "isomorphic-fetch": "^3.0.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
