@@ -8,7 +8,7 @@
     "lint": "eslint *.js lib",
     "stress": "artillery run stress.yml",
     "dev": "NODE_ENV=development nodemon cluster.js",
-    "start": "node cluster.js"
+    "start": "NODE_ENV=production node cluster.js"
   },
   "keywords": [
     "expressjs",
